@@ -1,0 +1,236 @@
+
+.bread{
+    background-color: #fff;
+    webkit-box-shadow: inset 5px 54px 50px -29px rgba(236,239,241,1);
+    -moz-box-shadow: inset 5px 54px 50px -29px rgba(236,239,241,1);
+    box-shadow: inset 5px 54px 50px -29px rgba(236,239,241,1);
+}
+
+.breadcrumb{
+    margin: 0;
+    padding: 25px 0;
+    background-color: transparent;
+}
+
+.breadcrumb a{
+    color: #94a2b1;
+    transition: .5s;
+}
+
+.breadcrumb a:hover{
+    text-decoration: none;
+    color: #232c3b;
+}
+
+.breadcrumb > .active {
+    color: #232c3b
+}
+
+.about-page{
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 110px;
+}
+
+.about-page .sidebar{
+    background-color: #f5f7f8;
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.about-page .sidebar-header{
+    position: relative;
+}
+
+.about-page .side-arr{
+    display: none;
+}
+
+.about-page .sidebar h5{
+    font-size: 20px;
+    font-weight: 900;
+    color: #242d3c;
+    padding: 19px 15px;
+}
+
+.about-page .sidebar ul{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.about-page .sidebar ul li{
+    border-top: 1px solid #e0e2e5;
+    padding: 10px 15px;
+    line-height: 17px;
+    transition: .5s;
+}
+
+.about-page .sidebar ul li:hover{
+    background-color: #32ade2;
+}
+
+.about-page .sidebar ul li a {
+    color: #96a4b3;
+}
+
+.about-page .sidebar ul li:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-page .inner-servises h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 2px;
+    color: #019add;
+}
+
+.about-page .obr{
+    padding-top: 30px;
+    margin: 0 -7px;
+    font-size: 0;
+}
+
+.about-page .servises-block{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 0 7px 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.about-page .servises-block:hover{
+    text-decoration: none;
+}
+
+.about-page .servises-block .servises-block-img{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #098ac9;
+}
+
+.about-page .servises-block:hover img{
+    opacity: 0.2;
+    transition: .5s;
+    border-radius: 4px;
+}
+
+.about-page .servises-block .servises-item{
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+}
+
+.about-page .servises-block .servises-item h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.servises-btn{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #ffc928;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.about-page .servises-block:hover .servises-btn{
+    background-color: #fff;
+    transition: .5s;
+}
+
+.servises-btn:before{
+    position: absolute;
+    content: '';
+    background: url("../images/arrser.png");
+    width: 8px;
+    height: 14px;
+    top: 13px;
+    left: 17px;
+}
+
+.about-page .servises-block:hover .servises-btn:before{
+    background: url("../images/arrser-hov.png");
+    transition: .5s;
+}
+
+@media (max-width: 1199px){
+    .about-page .servises-btn {
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 991px){
+    .about-page {
+        padding-bottom: 15px;
+    }
+    .about-page .sidebar{
+        display: block;
+    }
+    .about-page .side-arr{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 23px;
+    }
+    .about-page .sidebar-menu{
+        display: none;
+    }
+    .about-page .servises-btn {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .about-page .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 630px){
+    .about-page .servises-block {
+        width: 100%;
+        text-align: center;
+    }
+    .about-page .servises-block .servises-item {
+        text-align: left;
+        left: 115px;
+    }
+}
+
+@media (max-width: 539px){
+    .about-page .servises-block .servises-item {
+        left: 80px;
+    }
+}
+
+@media (max-width: 459px){
+    .about-page .servises-block .servises-item {
+        left: 40px;
+    }
+}
+
+@media (max-width: 424px){
+    .about-page .servises-block .servises-item {
+        left: 30px;
+    }
+}
+
+@media (max-width: 379px){
+
+}
+
+@media (max-width: 334px){
+    .about-page .servises-block .servises-item {
+        top: 20px;
+    }
+}

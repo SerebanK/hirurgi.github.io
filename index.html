@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="modal" id="popap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-dismiss="modal">
+                    <img src="images/close.png" alt="">
+                </button>
+                <div class="modal-header">
+                    <h3 class="modal-title">Задать вопрос</h3>
+                </div>
+                <div class="modal-body">
+                    <form method="post" name="popup" onsubmit="return false" id="callphone-1">
+                        <div class="form-group modal-form">
+                            <label class="validate">
+                                <input class="form-control" type="text"  name="name" placeholder="Ваше имя">
+                            </label>
+                        </div>
+                        <div class="form-group modal-form">
+                            <label class="validate">
+                                <input class="form-control" type="email" name="phone" placeholder="Ваш телефон"/>
+                            </label>
+                        </div>
+                        <div class="form-group modal-form">
+                            <label class="validate">
+                                <textarea name="comment" class="form-control com" placeholder="Ваш вопрос*"></textarea>
+                            </label>
+                        </div>
+                        <div class="modal-btn">
+                            <input type="submit" class="call-bt" value="задать вопрос" data-rel='callphone-1'>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-menu navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="st-bl col-xs-3 col-sm-8 col-md-9 col-lg-9 st-ad">
+                    <div class="line-top">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <ul class="collapse navbar-collapse" id="collapse">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Пациентам</a></li>
+                            <li><a href="#">Специалистам</a></li>
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Новости</a>
+                                <div class="menu-arr">
+                                    <img src="images/arrser-hov.png">
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Болезнь Рейно</a></li>
+                                    <li><a href="#">Холецистит</a></li>
+                                    <li><a href="#">Паховая грыжа</a></li>
+                                    <li><a href="#">Хирургическое лечение ожирения</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Галерея</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Операции и процедуры</a>
+                                <div class="menu-arr">
+                                    <img src="images/arrser-hov.png">
+                                </div>
+                                <ul class="dropdown-menu last-item-menu"></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-9 col-sm-4 col-md-3 col-lg-3">
+                    <div class="zap">
+                        <a href="#" data-toggle="modal" data-target="#popap">Задать вопрос</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-7 col-md-5 col-lg-5">
+                            <div class="top-txt">
+                                <h1>Центр торакальной хирургии<br>профессора Пищика В.Г.</h1>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-md-7 col-lg-7">
+                            <div class="tel-center">
+                                <div class="top-tel">
+                                    <div class="tel-ic"></div>
+                                        <a href="tel:+79262644124">+7 (926) 264 41 24</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+                            <div class="line-down">
+                                <ul class="">
+                                    <li><a href="#">для пациентов</a></li>
+                                    <li><a href="#">для врачей</a></li>
+                                    <li><a href="#">операции и процедуры</a></li>
+                                    <li><a href="#">наша клиника</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="news-block">
+        <div class="news-slow">
+            <div class="news-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+                            <div class="news-menu">
+                                <h5>Все новости</h5>
+                                <ul>
+                                    <li><a href="#">Болезнь Рейно</a></li>
+                                    <li><a href="#">Холецистит</a></li>
+                                    <li><a href="#">Паховая грыжа</a></li>
+                                    <li><a href="#">Хирургическое лечение ожирения</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-6">
+                            <div class="news-txt">
+                                <h5>Хирургическое лечение ожирения</h5>
+                                <p>В статье описана проблема морбидного ожирения в мире, рассмотрены самые распространенные методы лечения ожирения.</p>
+                                <p>Особое внимание уделено хирургическим методам лечения, таким как установка внутрижелудочных баллонов, лапароскопическое бандажирование желудка и операция билиопанкреатического шунтирования (БПШ).</p>
+                                <p>Указаны достоинства и недостатки каждой операции, возможные побочные эффекты и осложнения, даны общие рекомендации для пациентов</p>
+                                <a href="#">Читать больше...</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="news-pic">
+                                <img src="images/news-pic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plash-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="text-left">
+                                <p>Новости</p>
+                            </div>
+                        </div>
+                        <div class="hidden-xs col-sm-8 col-lg-8">
+                            <div class="text-center">
+                                <p>Media Statement in Response to the recent USA Today article</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="text-right">
+                                <p>Открыть</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plash-btn">
+                    <img src="images/arr-d.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider-block">
+        <div class="container dots-cont">
+            <div class="slide-dots"></div>
+        </div>
+       <div class="slider">
+           <div class="sl">
+               <div class="sl-pic"></div>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="text-block">
+                               <h2>Добро пожаловать!-1</h2>
+                               <p>Мы являемся группой специализированных<br>хирургов. Мы поможем найти решение<br>вашей
+                                   проблемы!</p>
+                               <div class="slider-btn">
+                                   <a href="#">Задать вопрос специалисту</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="sl">
+               <div class="sl-pic"></div>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="text-block">
+                               <h2>Добро пожаловать!-2</h2>
+                               <p>Мы являемся группой специализированных<br>хирургов. Мы поможем найти решение<br>вашей
+                                   проблемы!</p>
+                               <div class="slider-btn">
+                                   <a href="#">Задать вопрос специалисту</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="sl">
+               <div class="sl-pic"></div>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="text-block">
+                               <h2>Добро пожаловать!-3</h2>
+                               <p>Мы являемся группой специализированных<br>хирургов. Мы поможем найти решение<br>вашей
+                                   проблемы!</p>
+                               <div class="slider-btn">
+                                   <a href="#">Задать вопрос специалисту</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="sl">
+               <div class="sl-pic"></div>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="text-block">
+                               <h2>Добро пожаловать!-4</h2>
+                               <p>Мы являемся группой специализированных<br>хирургов. Мы поможем найти решение<br>вашей
+                                   проблемы!</p>
+                               <div class="slider-btn">
+                                   <a href="#">Задать вопрос специалисту</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="sl">
+               <div class="sl-pic"></div>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="text-block">
+                               <h2>Добро пожаловать!-5</h2>
+                               <p>Мы являемся группой специализированных<br>хирургов. Мы поможем найти решение<br>вашей
+                                   проблемы!</p>
+                               <div class="slider-btn">
+                                   <a href="#">Задать вопрос специалисту</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="servises">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Наши услуги</h2>
+                </div>
+                <div class="col-xs-12">
+                    <div class="obr">
+                        <a href="#" class="servises-block">
+                            <div class="servises-block-img">
+                                <img src="images/serv-1.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="servises-item">
+                                <h5>Рак<br>лёгкого</h5>
+                                <div class="servises-btn"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="servises-block">
+                            <div class="servises-block-img">
+                                <img src="images/serv-2.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="servises-item">
+                                <h5>Хирургия эмфиземы<br>и пневмоторакса</h5>
+                                <div class="servises-btn"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="servises-block">
+                            <div class="servises-block-img">
+                                <img src="images/serv-3.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="servises-item">
+                                <h5>Плевриты<br>и плевродез</h5>
+                                <div class="servises-btn"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="servises-block">
+                            <div class="servises-block-img">
+                                <img src="images/serv-4.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="servises-item">
+                                <h5>Миастения и заболевания<br>средостения</h5>
+                                <div class="servises-btn"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="servises-block">
+                            <div class="servises-block-img">
+                                <img src="images/serv-5.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="servises-item">
+                                <h5>Рак<br>пищевода</h5>
+                                <div class="servises-btn"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="servises-block">
+                            <div class="servises-block-img">
+                                <img src="images/serv-6.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="servises-item">
+                                <h5>Торакоскопическая<br>хирургия</h5>
+                                <div class="servises-btn"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-slow">
+            <div class="plash-down">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>О центре</p>
+                            <div class="plash-btn">
+                                <img src="images/arr-a.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                            <div class="about-us-txt">
+                                <div class="txt-block-1">
+                                    <h4>Центр торакальной хирургии профессора Пищика В.Г.</h4>
+                                    <p>Центр торакальной хирургии  — новое подразделение клиники, призванное решать проблемы диагностики и лечения заболеваний органов грудной полости.</p>
+                                    <p>Для этого приглашены ведущие торакальные хирурги города, представляющие новую формацию врачей — ученых-практиков, владеющими как классическими российскими представлениями, так и новейшими достижениями европейской и американской грудной медицины.</p>
+                                </div>
+                                <div class="txt-block-2">
+                                    <h5>Перечень заболеваний, при которых выполняются операции в Центре торакальной хирургии</h5>
+                                    <ul>
+                                        <li><a href="#">Рак легкого;</a></li>
+                                        <li><a href="#"> Доброкачественные опухоли и псевдоопухолевые образования легких;</a></li>
+                                        <li><a href="#">Новообразования средостения;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="txt-block-3">
+                                    <a href="#">Читать больше...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+                            <div class="about-us-img">
+                                <img src="images/about-us.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+                    <div class="logo-block">
+                        <a href="index.html" class="logo-foot">
+                            <img src="images/logo-footer.png" alt="">
+                        </a>
+                        <div class="logo-block-r">
+                            <h5>Центр торакальной хирургии профессора Пищика В.Г.</h5>
+                            <div class="social-block">
+                                <ul>
+                                    <li><a href="#" class="social-item"><i class="fa fa-facebook"
+                                                                           aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="social-item"><i class="fa fa-instagram"
+                                                                           aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="social-item"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+                    <div class="menu-foot-1">
+                        <h5>Информация</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Для пацинетов</a></li>
+                            <li><a href="#">Для врачей</a></li>
+                            <li><a href="#">Операции и процедуры</a></li>
+                            <li><a href="#">Наша клиника</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+                    <div class="menu-foot-2">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Пациентам</a></li>
+                            <li><a href="#">Специалистам</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Галерея</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+                    <div class="footer-form">
+                        <h5>Задать вопрос</h5>
+                        <div class="form-group form-1">
+                            <input name="name" type="text" class="form-control" placeholder="Ваше имя*"/>
+                            <input name="name" type="email" class="form-control" placeholder="Ваш email*"/>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="comment" class="form-control com" placeholder="Ваш вопрос*"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit">отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copirate">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
+                    <p>Copyright © Центр торакальной хирургии профессора Пищика В.Г. </p>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6">
+                   <div class="logo-step-center">
+                       <a href="#" class="logo-step">
+                           <p>Сайт создан в Step in design</p>
+                           <img src="images/logo-comp.png" alt="">
+                       </a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/mask.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
